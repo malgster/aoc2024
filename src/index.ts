@@ -1,4 +1,4 @@
 
-import {parseColumns} from "./Day1/list";
+import{calculateSimilarity} from "./Day1/day1_part2";
 
-parseColumns()
+calculateSimilarity()

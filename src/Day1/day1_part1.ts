@@ -2,7 +2,7 @@
 import * as fs from 'fs'
 
 
-export function parseColumns() {
+export function CalculateDistance() {
    const data = fs.readFileSync('input.txt', 'utf-8')
     const lines = data.trim().split('\n')
 
@@ -36,5 +36,7 @@ export function parseColumns() {
 
 
 }
+
+
 
 
