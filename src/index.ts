@@ -1,5 +1,5 @@
 
-import {findAllMuls} from "./day3/day3_part1";
+import {findAlldoAndDontMul} from "./day3/day3_part2";
 
 
-console.log(findAllMuls())
+console.log(findAlldoAndDontMul())
