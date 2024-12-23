@@ -1,7 +1,5 @@
 
-import{calculateSimilarity} from "./Day1/day1_part2";
-
-import  {identifySafeReports} from "./Day2/day2_part2";
+import {findAllMuls} from "./day3/day3_part1";
 
 
-identifySafeReports()
+console.log(findAllMuls())

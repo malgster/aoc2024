@@ -9,14 +9,14 @@ export function identifySafeReports() {
     for (let i = 0; i < lines.length; i++) {
         const report = lines[i].split(' ').map(e => parseInt(e))
 
-        if (isTheLineSafeWhenDamped(report)) safeReportsCpt++
+        if (isTheLineSafe(report)) safeReportsCpt++
     }
 
     console.log(safeReportsCpt)
 
 }
 
-function istheLineSafe(report: number[]) {
+function isTheLineSafe(report: number[]) {
 
 
     const sign = report[0] - report[1]
