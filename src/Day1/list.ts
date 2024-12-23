@@ -23,8 +23,8 @@ export function parseColumns() {
     columnOne.sort()
     columnTwo.sort()
 
-   // console.log("colonne 1",columnOne)
-        //console.log("colonne 2", columnTwo)
+   console.log("colonne 1",columnOne)
+    console.log("colonne 2", columnTwo)
 
     let distance = 0
 
