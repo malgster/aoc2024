@@ -29,7 +29,7 @@ function istheLineSafe(report: number[]) {
             const gap = report[i] - report[i+1]
 
             if (gap < 1 || gap > 3) return false
-         }
+        }
     } else if (sign < 0) {
 
         for (let i = 0; i < report.length-1; i++) {
@@ -42,4 +42,14 @@ function istheLineSafe(report: number[]) {
 
     return true
 
+}
+
+function isTheLineSafeWhenDamped(report: number[]) {
+    if (istheLineSafe(report)) return true
+    for (let i = 0; i < report.length; i++) {
+        const reportCopy = report.filter((e, j) => j !== i )
+        if (istheLineSafe(reportCopy)) return true
+    }
+
+    return false
 }
